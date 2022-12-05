@@ -1,0 +1,6 @@
+target("extlib")
+    set_kind("static")
+    add_headerfiles("include/(extlib/*.hpp)")
+    add_includedirs("include", {public = true})
+    add_files("modules/**.mpp", {install = true})
+    add_files("src/**.cpp")
